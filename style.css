@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cell-size: calc(100vh / 8);
+  --color-selected: green;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--cell-size);
+  width: var(--cell-size);
+  font-size: var(--cell-size);
+}
+
+.row:nth-of-type(odd) .cell:nth-of-type(even),
+.row:nth-of-type(even) .cell:nth-of-type(odd) {
+  background-color: #ddd;
+}
