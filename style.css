@@ -45,12 +45,12 @@ html {
   cursor: pointer;
 }
 
-.clickable:hover {
-  background-color: var(--color-hover) !important;
+.clickable.clickable.clickable.clickable:hover {
+  background-color: var(--color-hover);
 }
 
-.row:nth-of-type(odd) .cell:nth-of-type(even),
-.row:nth-of-type(even) .cell:nth-of-type(odd) {
+.cell:nth-of-type(even),
+.cell:nth-of-type(odd) {
   background-color: #ddd;
 }
 
