@@ -5,8 +5,13 @@
 }
 
 :root {
-  --cell-size: calc(100vh / 8);
+  --cell-size: calc(100vh / 10);
   --color-selected: green;
+  --color-hover: blue;
+}
+
+html {
+  background-color: black;
 }
 
 #wrapper {
@@ -33,9 +38,23 @@
   height: var(--cell-size);
   width: var(--cell-size);
   font-size: var(--cell-size);
+  user-select: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  background-color: var(--color-hover) !important;
 }
 
 .row:nth-of-type(odd) .cell:nth-of-type(even),
 .row:nth-of-type(even) .cell:nth-of-type(odd) {
   background-color: #ddd;
+}
+
+.row:nth-of-type(odd) .cell:nth-of-type(odd),
+.row:nth-of-type(even) .cell:nth-of-type(even) {
+  background-color: #fff;
 }
