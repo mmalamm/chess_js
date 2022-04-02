@@ -5,7 +5,7 @@
   "main": "index.js",
   "directories": {
     "lib": "lib",
-    "test": "tests"
+    "test": "test"
   },
   "scripts": {
     "test": "jest"
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mmalamm/chess_js#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
     "jest": "^27.5.1"
   }
 }
