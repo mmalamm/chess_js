@@ -8,7 +8,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host"
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,8 @@
     "url": "https://github.com/mmalamm/chess_js/issues"
   },
   "homepage": "https://github.com/mmalamm/chess_js#readme",
-  "dependencies": {
+  "devDependencies": {
+    "vite": "^2.9.1",
     "vitest": "^0.8.4"
   }
 }
