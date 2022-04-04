@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest";
 import { getAdjacentDiagCoords } from "../lib/utils/pawnFn";
 
 describe("pawnFn", () => {
