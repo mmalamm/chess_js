@@ -58,3 +58,8 @@ html {
 .row:nth-of-type(even) .cell:nth-of-type(even) {
   background-color: #fff;
 }
+
+.labelNum {
+  font-size: 20px;
+  color: red;
+}
