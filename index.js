@@ -1,10 +1,10 @@
 import chess from "./lib/chess.js";
 import { createInitState } from "./lib/helpers.js";
 
-const r = chess();
+const chessDiv = document.getElementById("chess");
+
+const r = chess(chessDiv);
 
 const gameState = createInitState();
 
-const chessDiv = document.getElementById("chess");
-
-r(gameState, chessDiv);
+r(gameState);
