@@ -1,0 +1,10 @@
+{
+  "rules": { "no-undef": "error" },
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  }
+}
