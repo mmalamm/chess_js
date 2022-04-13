@@ -5,7 +5,8 @@
 }
 
 :root {
-  --cell-size: calc(100vh / 10);
+  --low-dimension: min(100vh, 100vw)
+  --cell-size: calc(var(var(--low-dimension)) / 10);
   --color-selected: green;
   --color-hover: blue;
 }
