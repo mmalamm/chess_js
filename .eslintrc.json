@@ -1,5 +1,15 @@
 {
-  "rules": { "no-undef": "error" },
+  "rules": {
+    "no-undef": "error",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "always"
+      }
+    ]
+  },
+  "plugins": ["import"],
   "env": {
     "browser": true
   },
