@@ -1,6 +1,6 @@
 // white, king-side castling setup state
 const whiteKingsideCastleSetup = {
-  current: "w",
+  whosTurn: "w",
   selected: null,
   board: [
     ["br", null, "bb", "bq", "bk", null, null, "br"],
@@ -15,7 +15,7 @@ const whiteKingsideCastleSetup = {
 };
 
 const whiteKingsideCastleSetup2 = {
-  current: "b",
+  whosTurn: "b",
   selected: null,
   board: [
     ["br", null, "bb", null, "bk", null, null, "br"],
@@ -30,7 +30,7 @@ const whiteKingsideCastleSetup2 = {
 };
 
 const thing = {
-  current: "b",
+  whosTurn: "b",
   selected: null,
   board: [
     ["br", null, "bb", null, "bk", null, null, "br"],

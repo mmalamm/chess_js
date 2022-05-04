@@ -1,7 +1,7 @@
 // white's turn: moving white horse would put white king in check:
 // white horse at [5,2] can't move (show error? or filter moves?)
 export const whiteUnmovablePieceDueToCheck = {
-  current: "w",
+  whosTurn: "w",
   selected: [5, 2],
   board: [
     ["br", "bh", "bb", "bq", "bk", null, "bh", "br"],
@@ -18,7 +18,7 @@ export const whiteUnmovablePieceDueToCheck = {
 // black bishop put white king in check:
 // use this fixture to test isInCheck
 export const whiteIsInCheck = {
-  current: "w",
+  whosTurn: "w",
   selected: null,
   board: [
     ["br", "bh", "bb", "bq", "bk", null, "bh", "br"],
