@@ -43,9 +43,11 @@ const thing = {
     ["wr", null, null, "wq", "wk", null, null, "wr"],
   ],
   castlingAllowed: {
-    whiteQueenSide: true,
-    whiteKingSide: true,
-    blackQueenSide: true,
-    blackKingSide: true,
+    whiteQueenSideRookMoved: false,
+    whiteKingSideRookMoved: false,
+    whiteKingMoved: false,
+    blackQueenSideRookMoved: false,
+    blackKingSideRookMoved: false,
+    blackKingMoved: false,
   },
 };
